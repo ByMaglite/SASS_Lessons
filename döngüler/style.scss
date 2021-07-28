@@ -13,12 +13,29 @@
 //     justify-content: center;
 //     align-items: center;
 // }
-@mixin kenarlık($yon,$tur,$renk){
-    @if($yon =="1"){
-        border-left: 3px $tur $renk;
+@mixin kenarlık ($yon,$tur,$renk) {
+    @if ($yon == "l") {
+        border-left: 3px $tur $renk;  
     }
-    @else if ($yon =="r"){
-        
+    @else if ($yon == "r") {
+        border-right: 3px $tur $renk;  
     }
-
+    @else if ($yon == "t") {
+        border-top: 3px $tur $renk;  
+    }
+    @else if ($yon == "b") {
+        border-bottom: 3px $tur $renk;  
+    }
+    @else  {
+        border: 3px $tur $renk;  
+    }
+}
+.container{
+    width: 300px;
+    height: 100px;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include kenarlık(sd, solid , #000 )
 }

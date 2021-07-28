@@ -1,0 +1,55 @@
+
+// body{
+//     background-color:orange;
+// }
+// .items{
+//     display: flex;
+//     flex-direction:column;
+//     justify-content:center;
+//     align-items:center;
+//     height:100vh;
+//     border: 1px solid red;
+// }
+// @for $i from 1 through 5{
+//     .item-#{$i}{
+//         width:100px*$i;
+//         height:20px*$i;
+//         background-color:blueviolet;
+//         margin-bottom: 10px;
+//     }
+// }
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: orange;
+}
+.items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border: 1px solid red;
+}
+$color1:#256987;
+$color2:#a2f8c9;
+$color3:#9a5f6d;
+$color4:#1b6fcb;
+$color5:#d9c89f;
+$dizi:$color1, $color2, $color3, $color4, $color5;
+// @for $i from 1 through 5{
+//     .item-#{$i}{
+//         width: 100px * $i;
+//         height: 15px;
+//         background-color: nth($dizi, $i);
+//         margin-bottom: 10px;
+//     }
+// }
+$dizi2: 1, 2, 3, 4, 5;
+@each $i in $dizi2{
+    .item-#{$i}{
+        font-size: 10px * $i;
+    }
+}
