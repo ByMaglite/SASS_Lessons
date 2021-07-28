@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: gray;
+}
+
+nav::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.left {
+  list-style: none;
+  float: left;
+}
+
+.left li {
+  display: inline-block;
+  margin: 25px;
+  background-color: darkgreen;
+}
+
+.left li:first-child {
+  margin: 0;
+}
+
+.left li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: red;
+  display: inline-block;
+  padding: 10px;
+}
+
+.right {
+  float: right;
+}
+
+.right .cw,
+.right .linkedin {
+  padding: 10px;
+  display: inline-block;
+  width: 100px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: red;
+}
+
+.right .cw:link {
+  background-color: #44FFD7;
+}
+
+.right .cw:hover {
+  background-color: #aaffed;
+}
+
+.right .linkedin:link {
+  background-color: #44FFD7;
+}
+
+.right .linkedin:hover {
+  background-color: #aaffed;
+}
+/*# sourceMappingURL=style.css.map */

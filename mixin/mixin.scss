@@ -1,0 +1,53 @@
+div{
+    float:left
+}
+@mixin container ($color, $height) {
+    width:100px;
+    height:$height;
+    background-color: $color;
+    margin: 15px;
+}
+.button{
+    width:100px;
+    height:100px;
+    background-color:lawngreen;
+    margin: 15px;
+    border-radius: 20px
+}
+#first{
+    @include container(red, 100px);
+}
+#second{
+    @include container(green, 200px);
+}
+#third{
+    @include container(orange, 300px);
+}
+#a1{
+    @extend .button;
+}
+#b2{
+    @extend .button;
+}
+#c3{
+    @extend .button;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

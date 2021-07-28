@@ -1,0 +1,16 @@
+@mixin stil($takim) {
+    @if ($takim == "fb") {
+      background-color: blue;
+    } @else if ($takim == "bjk") {
+      background-color: black;
+    } @else if ($takim == "gs") {
+      background-color: red;
+    } @else {
+      background-color: purple;
+    }
+  }
+  .kutu {
+    float: left;
+    padding: 15px;
+    @include stil("");
+  }

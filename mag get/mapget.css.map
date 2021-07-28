@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAUA,AAAA,IAAI,CAAA;EACA,gBAAgB,EARP,IAAI;CAShB;;AACD,AAAA,EAAE,CAAA;EACE,KAAK,EAZI,IAAI;EAab,WAAW,EAPL,GAAG;CAQZ",
+    "sources": [
+        "mapget.scss"
+    ],
+    "names": [],
+    "file": "mapget.css"
+}
