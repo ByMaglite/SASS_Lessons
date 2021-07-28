@@ -1,0 +1,24 @@
+// @mixin icon($boyut,$yuvarlak){
+//     width:$boyut ;
+//     height: $boyut;
+//     @if($yuvarlak){
+//         border-radius: $boyut/2;
+//     }
+// }
+// .container{
+//     float: left;
+//     @include icon(40px,true);
+//     background-color: tomato;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+@mixin kenarlık($yon,$tur,$renk){
+    @if($yon =="1"){
+        border-left: 3px $tur $renk;
+    }
+    @else if ($yon =="r"){
+        
+    }
+
+}
